@@ -15,5 +15,8 @@ config :rumbl, Rumbl.Repo,
   username: "postgres",
   password: "postgres",
   database: "rumbl_test",
-  hostname: "localhost",
+  hostname: "192.168.33.60",
   pool: Ecto.Adapters.SQL.Sandbox
+
+config :comeonin, :bcrypt_log_rounds, 4 
+config :comeonin, :pbkdf2_rounds, 1
